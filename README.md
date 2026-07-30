@@ -105,6 +105,13 @@ are present in the data and produce results without manual, per-machine edits. A
 hardcoded to the specific names or values here won't transfer. You can preview how well
 your pipeline generalizes with the optional [self-check](#self-check-optional) below.
 
+**Don't assume the data is clean.** This is a raw export pulled straight from production
+systems — not a curated dataset, and nobody has checked it over before handing it to you.
+Assume it contains mistakes, and satisfy yourself that your inputs are sound before you build
+on top of them: a pipeline that silently computes the wrong thing from bad inputs is worse
+than one that stops and explains why. If something doesn't add up, say so in your write-up and
+show what you did about it.
+
 ## Deliverables
 
 1. **Code** that runs end-to-end and produces your results from the three input files.
